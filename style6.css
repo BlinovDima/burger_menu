@@ -1,0 +1,56 @@
+#nav-icon6 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  transition-duration: 1s;
+  margin: 48px auto 12px auto;
+  cursor: pointer;
+}
+#nav-icon6 span {
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  border-radius: 20px;
+  position: absolute;
+  transition-duration: 0.25s;
+  transition-delay: 0.25s;
+}
+#nav-icon6 span:before {
+  left: 0;
+  position: absolute;
+  top: -18px;
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+  transition: transform 0.25s, top 0.25s 0.25s;
+}
+#nav-icon6 span:after {
+  left: 0;
+  position: absolute;
+  top: 18px;
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+  transition: transform 0.25s, top 0.25s 0.25s;
+}
+#nav-icon6.open span {
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
+  background: transparent;
+}
+#nav-icon6.open span:before {
+  transition: top 0.25s, transform 0.25s 0.25s;
+  top: 0px;
+  transform: rotateZ(-45deg);
+}
+#nav-icon6.open span:after {
+  transition: top 0.4s, transform 0.25s 0.25s;
+  top: 0px;
+  transform: rotateZ(45deg);
+}

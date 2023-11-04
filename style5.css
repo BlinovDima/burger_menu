@@ -1,0 +1,42 @@
+#nav-icon5 {
+  margin: 30px auto;
+  width: 60px;
+  height: 45px;
+  position: relative;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+#nav-icon5 span {
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  border-radius: 20px;
+  position: absolute;
+  transition-duration: 0.25s;
+  top: 18px;
+}
+#nav-icon5 span:before {
+  left: 0;
+  position: absolute;
+  top: -18px;
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+}
+#nav-icon5 span:after {
+  left: 0;
+  position: absolute;
+  top: 18px;
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+}
+#nav-icon5.open {
+  transform: rotateZ(450deg);
+}

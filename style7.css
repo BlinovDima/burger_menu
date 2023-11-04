@@ -1,0 +1,51 @@
+#nav-icon7 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  transition-duration: 1s;
+  margin: 48px auto 12px auto;
+  cursor: pointer;
+}
+#nav-icon7 span {
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  border-radius: 20px;
+  position: absolute;
+  transition-duration: 0.25s;
+}
+#nav-icon7 span:before {
+  left: 0;
+  position: absolute;
+  top: -18px;
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+}
+#nav-icon7 span:after {
+  left: 0;
+  position: absolute;
+  top: 18px;
+  height: 9px;
+  width: 60px;
+  background-color: #337ab7;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+}
+#nav-icon7.open span {
+  background: transparent;
+}
+#nav-icon7.open span:before {
+  transition: transform 0.25s;
+  transform: rotateZ(45deg);
+  top: 0;
+}
+#nav-icon7.open span:after {
+  transition: transform 0.25s;
+  transform: rotateZ(-405deg);
+  top: 0;
+}
